@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #000; /* Cor de backup caso a imagem não carregue */
+    background-image: url('automation-background.jpg');
+    background-size: cover; /* Para cobrir toda a área */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Para que o fundo fique fixo durante a rolagem */
+    color: #fff; /* Mudando a cor do texto para branco para contrastar com o fundo escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente para melhorar a legibilidade */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(77, 213, 255, 0.3); /* Sombra azul neon */
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.info-section {
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-section {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #4DD5FF;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 700px;
+}
+
+.profile-img {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 25px;
+    background-color: #4DD5FF;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 15px rgba(77, 213, 255, 0.7);
+}
+
+.btn i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .content-wrapper {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+    
+    .profile-section {
+        margin-bottom: 0;
+    }
+    
+    .info-section {
+        text-align: left;
+        align-items: flex-start;
+    }
+    
+    .social-links {
+        justify-content: flex-start;
+    }
+}
